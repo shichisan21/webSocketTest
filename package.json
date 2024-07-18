@@ -1,0 +1,14 @@
+{
+  "name": "lambda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1659.0",
+    "typescript": "^5.5.3"
+  },
+  "scripts": {
+    "dbuild": "tsc"
+  }
+}

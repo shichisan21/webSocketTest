@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2018" /* ECMAScriptのターゲットバージョン */,
+    "module": "commonjs" /* Node.jsでのモジュールの使用 */,
+    "esModuleInterop": true /* default import のサポート */,
+    "strict": true /* 厳格な型チェックを有効化 */,
+    "skipLibCheck": true /* 型チェックを .d.ts ファイルに適用しない */,
+    "forceConsistentCasingInFileNames": true /* ファイル名の一貫性をチェック */,
+    "outDir": "./dist" /* コンパイルされたファイルの出力ディレクトリ */,
+    "rootDir": "./src" /* ソースファイルのルートディレクトリ */,
+    "declaration": true /* .d.ts ファイルの生成 */,
+    "sourceMap": true /* ソースマップの生成 */,
+    "inlineSources": true /* ソースコードをソースマップ内にインライン化 */,
+    "resolveJsonModule": true /* JSON モジュールの解決を有効化 */,
+    "baseUrl": "." /* ノンリレーティブモジュールインポートのベースディレクトリ */,
+    "paths": {
+      "*": ["node_modules/*", "src/types/*" /* カスタム型定義のパス */]
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/types" /* カスタム型定義のディレクトリ */
+    ]
+  },
+  "include": ["src/**/*.ts" /* コンパイル対象とするファイルパターン */],
+  "exclude": [
+    "node_modules" /* 除外するディレクトリ */,
+    "**/*.spec.ts" /* テストファイルを除外 */
+  ]
+}
